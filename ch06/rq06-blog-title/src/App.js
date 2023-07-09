@@ -1,7 +1,9 @@
-import { useEffect } from "react";
+import {useEffect} from "react";
 
-function BlogPost({ title, body }) {
-  useEffect(() => {
+function BlogPost ({title, body})
+{
+  useEffect (() =>
+  {
     document.title = title;
   }, [title]);
   return (
@@ -12,10 +14,11 @@ function BlogPost({ title, body }) {
   );
 }
 
-function App() {
+function App ()
+{
   return (
     <main>
-      <BlogPost title="First post" body={<p>Welcome to my cool website.</p>} />
+      <BlogPost title = "First post" body = {<p>Welcome to my cool website.</p>}/>
     </main>
   );
 }
