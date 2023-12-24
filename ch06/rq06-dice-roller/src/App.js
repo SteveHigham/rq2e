@@ -9,7 +9,7 @@ function Die() {
     textAlign: "center",
     lineHeight: 2,
   };
-  const value = Math.floor(6 * Math.random());
+  const value = Math.floor(6 * Math.random()) + 1;
   return <span style={style}>{value}</span>;
 }
 

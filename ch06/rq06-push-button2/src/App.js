@@ -19,10 +19,11 @@ function LockIcon({ pressed }) {
 }
 
 function LockButton() {
-  return <Button label="Lock" Icon={LockIcon} />;
+  return <Button label="lock" ButtonIcon={LockIcon} />;
 }
 
 function App() {
+  const pressed = true;
   return <LockButton />;
 }
 
